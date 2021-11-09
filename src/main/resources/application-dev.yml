@@ -7,6 +7,11 @@ spring:
     password: root
     url: jdbc:mysql://192.168.4.50:3307/nacos_devtest?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
     driver-class-name: com.mysql.cj.jdbc.Driver
+  application:
+    name: test-thymelead
+  thymeleaf:
+    cache: false
+
 mybatis:
   mapper-locations: classpath:mapping/*Mapper.xml
   type-aliases-package:  com.example.entity
